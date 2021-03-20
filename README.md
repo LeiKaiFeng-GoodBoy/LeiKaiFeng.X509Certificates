@@ -1,7 +1,8 @@
 生成一个CA证书
 
 
-`X509Certificate2 ca = TLSCertificate.CreateCA("LeiKaiFeng", 2048, 365);`
+` X509Certificate2 ca = TLSCertificate.CreateCA("LeiKaiFeng", 2048, 365); 
+`
 
 
 返回的X509Certificate2包含私钥
@@ -9,7 +10,9 @@
 有了CA证书签发TLS证书
 
 
-`X509Certificate2 tlsX509Certificate2 = TLSCertificate.CreateTlsCertificate("pornhub.com", ca, 2048, 365, "pornhub.com", "*.pornhub.com");`
+`
+X509Certificate2 tlsX509Certificate2 = TLSCertificate.CreateTlsCertificate("pornhub.com", ca, 2048, 365, "pornhub.com", "*.pornhub.com");
+`
 
 
 返回的X509Certificate2包含私钥
